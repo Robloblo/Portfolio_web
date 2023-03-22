@@ -12,8 +12,8 @@ carteHtml.addEventListener("mousemove", function(event){
 
   let boulle = carteHtml.querySelector("div");
 
-  let calculX = -3 - (1*(100-maSourisX)/100);
-  let calculY = -5 + (1*(100-maSourisY)/100);
+  let calculX = -2.5 - (1*(100-maSourisX)/100);
+  let calculY = -5.5 + (1*(100-maSourisY)/100);
   
   boulle.style.left= calculX + "em";
   boulle.style.bottom= calculY + "em";
@@ -30,11 +30,11 @@ carteCss.addEventListener("mousemove", function(event){
 
   let boulle = carteCss.querySelector("div");
   
-  let calculX = -3 + (1*(100-maSourisX)/100);
-  let calculY = -5 - (1*(100-maSourisY)/100);
+  let calculX = 1 + (1*(100-maSourisX)/100);
+  let calculY = -5.5 + (1*(100-maSourisY)/100);
   
   boulle.style.right= calculX + "em";
-  boulle.style.top= calculY + "em";
+  boulle.style.bottom= calculY + "em";
 })
 
 
@@ -48,8 +48,8 @@ carteJavaScript.addEventListener("mousemove", function(event){
 
   let boulle = carteJavaScript.querySelector("div");
   
-  let calculX = -3 + (1*(100-maSourisX)/100);
-  let calculY = -5 + (1*(100-maSourisY)/100);
+  let calculX = -3.5 + (1*(100-maSourisX)/100);
+  let calculY = -5.5 + (1*(100-maSourisY)/100);
   
   boulle.style.right= calculX + "em";
   boulle.style.bottom= calculY + "em";
