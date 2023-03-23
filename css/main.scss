@@ -26,6 +26,7 @@ body{
     padding-top: 2em;
     background: linear-gradient(30deg,rgb(0, 0, 20), rgb(0, 0, 0),rgb(20,20,20));
     
+    
 }
 
 main{
@@ -67,9 +68,13 @@ header{
 /*---------------------Fin partie pour le header---------------------------*/
 
 .wrapperPresentation{
-    padding: 18em 18em 25em 18em;
+    width:100%;
+    height:50em;
     margin-bottom: 5em;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     h1{
         display: flex;
@@ -80,7 +85,7 @@ header{
     }
     p{
         margin-top:1em;
-        padding:.5em;
+        padding:2em;
         white-space:pre-line;
         letter-spacing: 1px;
         font-weight: 600;
@@ -435,3 +440,150 @@ header{
         background-color: rgb(253, 253, 253);
     }
 }*/
+
+
+
+@media screen and (max-width: 1120px) {
+    .wrapperPresentation{
+        p{
+            font-size: 1.3em;
+        }
+    }
+    
+    header{
+        nav ul{
+            width:26em;
+
+            li{
+                a{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+    .wrapperPhotoProfile{
+        img{
+            width: 13em;
+            height:13em;
+        }
+        &:hover::after{
+            transform: translate(0.85em,0.85em) rotate(10deg);
+            background-position: 90% 90%;
+           
+        }
+        &::after{ //L'effet de border noir et blanche de l'image
+           
+            width:13.3em;
+            height:13.3em;
+            top:0;
+            left:0;
+            transform: translate(0.85em,0.85em);
+           
+            
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .wrapperPresentation{
+        p{
+            white-space:normal;
+            font-size: 1.1em;
+        }
+    }
+    header{
+        nav ul{
+            width:20em;
+
+            li{
+                a{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .wrapperPhotoProfile{
+        img{
+            width: 12em;
+            height:12em;
+        }
+        &:hover::after{
+            transform: translate(1.3em,1.3em) rotate(10deg);
+            background-position: 90% 90%;
+           
+        }
+        &::after{ //L'effet de border noir et blanche de l'image
+            transition: 0s;
+            width: 12.3em;
+            height:12.3em;
+            top:0;
+            left:0;
+            transform: translate(1.3em,1.3em);
+           
+            
+        }
+    }
+
+    .snowBall {
+    
+        & > *{
+          
+            width: 12em;
+            height:12em;
+           
+            
+            transform: translate(-50%,-50%);
+        }
+        & div:nth-child(1){
+            left: 0em;
+            top: 50em;
+            filter: blur(150px);
+        }
+        & div:nth-child(2){
+            right: -10em;
+            top: 0em;
+            filter: blur(150px);
+        }
+        & div:nth-child(3){
+            right: -10em;
+            bottom: 10em;
+            filter: blur(150px);
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .wrapperPresentation{
+        h1{
+            font-size: 1.6em;
+        }
+    }
+    body{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .wrapperPhotoProfile{
+        img{
+            width: 7em;
+            height:7em;
+            transform: translate(-2em,-4em);
+        }
+        &:hover::after{
+            transform: translate(1.3em,1.3em) rotate(10deg);
+            background-position: 90% 90%;
+           
+        }
+        &::after{ //L'effet de border noir et blanche de l'image
+            content: none;
+            display: none;
+            
+            
+        }
+    }
+    .wrapperSkills{
+        p{
+            font-size: 1.2em;
+        }
+    }
+}
