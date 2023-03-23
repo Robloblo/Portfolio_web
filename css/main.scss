@@ -10,6 +10,8 @@
     font-family: josefin1;
     src: url(../assets/fonts/Josefin/JosefinSans-VariableFont_wght.ttf);
 }
+
+
 * {
     margin:0;
     padding: 0;
@@ -83,7 +85,7 @@ header{
         letter-spacing: 1px;
         font-weight: 600;
         font-size: 1.5em;
-        
+        text-align: center;
         
     }
     svg{

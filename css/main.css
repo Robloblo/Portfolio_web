@@ -82,6 +82,7 @@ header nav ul li a {
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 1.5em;
+  text-align: center;
 }
 .wrapperPresentation svg {
   position: absolute;
